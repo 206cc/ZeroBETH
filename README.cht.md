@@ -5,7 +5,7 @@
 
 ZeroBETH 是基於 [PicoBETH](https://github.com/206cc/PicoBETH) 的延伸版本，將主控器從 Raspberry Pi Pico 改為 Raspberry Pi Zero 2 W，提供更強大的效能與更多的擴充功能。此變體保留原有設計理念：經濟、直覺、精準，並針對進階使用者與開發者提供更高彈性。
 
-> [!CAUTION]
+> [!TIP]
 > 目前仍在測試階段，待完善後將公開釋出
 
 ---
@@ -27,7 +27,7 @@ ZeroBETH 是基於 [PicoBETH](https://github.com/206cc/PicoBETH) 的延伸版本
 | 處理器           | 雙核心 133MHz                         | 四核心 1GHz                       |
 | 記憶體           | 264KB                                 | 512MB                             |
 | 無線連接         | 無                                    | Wi-Fi 802.11n                     |
-| 儲存裝置         | 無內建儲存                            | microSD                           |
+| 儲存裝置         | 2MB                                  | microSD                           |
 | 作業系統支援     | 無                                    | Linux 系統（Raspberry Pi OS）     |
 | 價格（美元）     | 約 $7.00 USD                          | 約 $20.00 USD                     |
 
