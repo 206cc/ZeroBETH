@@ -1,104 +1,82 @@
-ZeroBETH – Open-Source Badminton Stringing Machine Firmware  
-Copyright (C) 2025 KuoKuo  
-Project homepage: https://github.com/206cc/ZeroBETH
+# ZeroBETH – License Information
+
+ZeroBETH is an open-source badminton stringing machine firmware and hardware system, developed and maintained by **KuoKuo**.
+
+- Hardware License: [CERN-OHL-W v2](https://ohwr.org/cern_ohl_w_v2.txt)  
+- Software License: [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.txt)
+
+Project Homepage: https://github.com/206cc/ZeroBETH  
 Contact: 500119.cpc@gmail.com
 
-This program is free software: you can redistribute it and/or modify it
-under the terms of the GNU General Public License as published by the Free
-Software Foundation, either version 3 of the License, or (at your option)
-any later version.
+---
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+## Software License – GNU GPL v3.0
 
-You should have received a copy of the GNU General Public License
-along with this program. If not, see <https://www.gnu.org/licenses/>.
+The source code of ZeroBETH is licensed under the **GNU General Public License version 3** (or later).  
+This means:
+
+- You are free to use, modify, and redistribute the code
+- Modifications must also be released under the same GPL license
+- There is **no warranty**, express or implied
+
+Full license text: https://www.gnu.org/licenses/gpl-3.0.txt
 
 ---
 
-## Included Third-Party Licenses
+## Hardware License – CERN-OHL-W v2
 
-This project includes the following third-party libraries, each retaining their original licenses:
+All hardware design files in this project (schematics, PCB layouts, 3D models, mechanical parts) are licensed under the:
+
+**CERN Open Hardware Licence Version 2 – Weakly Reciprocal**  
+https://ohwr.org/cern_ohl_w_v2.txt
+
+Under this license:
+
+- You may use, modify, and distribute the hardware files freely
+- If you modify and distribute, your modified versions must also be licensed under CERN-OHL-W v2
 
 ---
+
+## Third-Party Licenses
 
 ### 1. RPI-PICO-I2C-LCD
 
-- **Author**: Tyler Peppy  
-- **License**: MIT License  
-- **Repository**: https://github.com/T-622/RPI-PICO-I2C-LCD  
-- **Modifications**: Adjusted by KuoKuo in 2025 to support Raspberry Pi Zero  
-
-#### MIT License:
-Copyright (c) 2023 Tyler Peppy
-
-Permission is hereby granted, free of charge, to any person obtaining a copy  
-of this software and associated documentation files (the "Software"), to deal  
-in the Software without restriction, including without limitation the rights  
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
-copies of the Software, and to permit persons to whom the Software is  
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all  
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  
-SOFTWARE.
-
----
+- Author: Tyler Peppy  
+- License: MIT  
+- Source: https://github.com/T-622/RPI-PICO-I2C-LCD  
+- Modifications: Adjusted by KuoKuo in 2025 for Raspberry Pi Zero compatibility
 
 ### 2. hx711-rpi-py
 
-- **Author**: Daniel Robertson  
-- **License**: MIT License  
-- **Repository**: https://github.com/endail/hx711-rpi-py  
-- **Modifications**: None (used as-is)
+- Author: Daniel Robertson  
+- License: MIT  
+- Source: https://github.com/endail/hx711-rpi-py  
+- Modifications: None (used as-is)
 
-#### MIT License:
-Copyright (c) 2021 Daniel Robertson
+#### MIT License (applies to both above):
 
 Permission is hereby granted, free of charge, to any person obtaining a copy  
 of this software and associated documentation files (the "Software"), to deal  
 in the Software without restriction, including without limitation the rights  
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
-copies of the Software, and to permit persons to whom the Software is  
-furnished to do so, subject to the following conditions:
+copies of the Software...
 
-The above copyright notice and this permission notice shall be included in all  
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  
-SOFTWARE.
+(See full MIT License text inside respective files)
 
 ---
 
-## Full GNU General Public License, Version 3
+## Summary
 
-You can read the full text of the GNU General Public License v3.0 at the following official link:
-
-https://www.gnu.org/licenses/gpl-3.0.txt
+| Component   | License      | Notes                              |
+|-------------|--------------|------------------------------------|
+| Firmware    | GPL v3       | Entire Python code base            |
+| Hardware    | CERN-OHL-W v2| PCBs, schematics, 3D parts         |
+| LCD Driver  | MIT          | Modified from original             |
+| HX711 Driver| MIT          | Used as-is                         |
 
 ---
 
-## Hardware License
+We welcome contributions and forks under these terms.  
+Please feel free to contact us with questions or suggestions.
 
-All hardware design files in this project (including schematics, PCB layouts, 3D models, and mechanical parts) are licensed under:
-
-**CERN Open Hardware Licence Version 2 – Weakly Reciprocal (CERN-OHL-W v2)**  
-https://ohwr.org/cern_ohl_w_v2.txt
-
-You may copy, modify, and distribute the hardware under the terms of the CERN-OHL-W.  
-If you modify the hardware and distribute it, you must distribute your modifications under the same license.  
-See the full license text at the above link for detailed terms.
+— KuoKuo © 2025
