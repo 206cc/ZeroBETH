@@ -89,3 +89,16 @@ SOFTWARE.
 You can read the full text of the GNU General Public License v3.0 at the following official link:
 
 https://www.gnu.org/licenses/gpl-3.0.txt
+
+---
+
+## Hardware License
+
+All hardware design files in this project (including schematics, PCB layouts, 3D models, and mechanical parts) are licensed under:
+
+**CERN Open Hardware Licence Version 2 – Weakly Reciprocal (CERN-OHL-W v2)**  
+https://ohwr.org/cern_ohl_w_v2.txt
+
+You may copy, modify, and distribute the hardware under the terms of the CERN-OHL-W.  
+If you modify the hardware and distribute it, you must distribute your modifications under the same license.  
+See the full license text at the above link for detailed terms.
