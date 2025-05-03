@@ -22,11 +22,11 @@ ZeroBETH 是基於 [PicoBETH](https://github.com/206cc/PicoBETH) 的延伸版本
 
 ## 硬體比較：Pico vs Zero 2 W
 
-| 項目             | Raspberry Pi Pico                     | Raspberry Pi Zero 2 W             |
+| 項目             | Raspberry Pi Pico W                   | Raspberry Pi Zero 2 W             |
 |------------------|---------------------------------------|-----------------------------------|
 | 處理器           | 雙核心 133MHz                         | 四核心 1GHz                       |
 | 記憶體           | 264KB                                 | 512MB                             |
-| 無線連接         | 無                                    | Wi-Fi 802.11n                     |
+| 無線連接         | Wi-Fi 802.11n                         | Wi-Fi 802.11n                     |
 | 儲存裝置         | 2MB                                  | microSD                           |
 | 作業系統支援     | 無                                    | Linux 系統（Raspberry Pi OS）     |
 | 價格（美元）     | 約 $7.00 USD                          | 約 $20.00 USD                     |
