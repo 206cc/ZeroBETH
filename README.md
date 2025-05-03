@@ -84,7 +84,7 @@ PicoBETH has been tested over a long period and validated by users. It offers st
 | Tension Accuracy     | ±0.05 lb         | ±0.05 lb         | Maximum tension fluctuation after stabilization |
 | Sampling Rate        | ≥80Hz            | ≥80Hz            | Depends on SparkFun HX711 module               |
 | Pulling Frequency    | Lower            | Higher           | Faster processing improves response time       |
-| OTA Firmware Update  | Not Supported    | Supported        | Update firmware via Wi-Fi                      |
+| OTA Firmware Update  | v2.80E and above | Supported        | Update firmware via Wi-Fi                      |
 | UI Interface         | Minimal          | Redesigned       | v1: 2004 LCD, v2: 4" full-color IPS LCD        |
 
 ---
