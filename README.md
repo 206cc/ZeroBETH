@@ -26,11 +26,11 @@ ZeroBETH is an extended version based on [PicoBETH](https://github.com/206cc/Pic
 
 ## Hardware Comparison: Pico vs Zero 2 W
 
-| Item              | Raspberry Pi Pico                     | Raspberry Pi Zero 2 W             |
+| Item              | Raspberry Pi Pico W                    | Raspberry Pi Zero 2 W             |
 |-------------------|----------------------------------------|-----------------------------------|
 | Processor         | Dual-core 133MHz                       | Quad-core 1GHz                    |
 | Memory            | 264KB                                  | 512MB                             |
-| Wireless          | None                                   | Wi-Fi 802.11n                     |
+| Wireless          | Wi-Fi 802.11n                          | Wi-Fi 802.11n                     |
 | Storage           | 2MB                                    | microSD                           |
 | OS Support        | None                                   | Linux-based (Raspberry Pi OS)     |
 | Price (USD)       | Around $7.00                           | Around $20.00                     |
