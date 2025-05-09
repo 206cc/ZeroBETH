@@ -39,20 +39,48 @@ ZeroBETH is an extended version based on [PicoBETH](https://github.com/206cc/Pic
 
 ## Hardware Differences: PicoBETH vs ZeroBETH
 
-To upgrade to ZeroBETH, simply replace the mainboard and keypad board in PicoBETH EP6.
+### Load Cell Sensor
+
+ZeroBETH is equipped with the NJ5 YZC-133 50kg Load Cell by default. If you are using a 20kg Load Cell, please switch to the 20kg setting from the engineering menu.
+
+> [!CAUTION]  
+> Please note that the maximum tension for the 20kg Load Cell should not exceed 45lb, as this may cause permanent damage.
+
+### Sliding Platform
+
+ZeroBETH is designed to work with the SGX 1610 sliding platform. With the new stepper motor driver program, it supports tension up to 70lb or more when used with the 1610 screw sliding platform.
+
+### PCB Version  
+To upgrade to ZeroBETH, simply replace the main board and button board from PicoBETH EP6.
 
 ![img_pcb1](docs/img_pcb1.jpg)  
 ![img_pcb2](docs/img_pcb2.jpg)  
-![img_pcb3](docs/img_pcb3.jpg)
+![img_pcb3](docs/img_pcb3.jpg)  
 
-**PCB & Gerber Files:** (To be uploaded after verification is complete)
+**PCB Gerber files:** (To be uploaded after testing is complete)
 
+#### DC-DC 5V Power Converter
+
+Due to the prevalence of substandard MP1584EN modules on the market, these inferior products may cause instability and data drift when used with the more power-hungry Raspberry Pi Zero 2W, due to high ripple. Therefore, the ZeroBETH PCB version includes a high-quality Pololu D24V22F5 DC-DC power board.
+
+If your MP1584EN power supply is unstable, it is recommended to switch to a reliable MP1584EN supplier or directly use the Pololu D24V22F5 power converter to ensure system stability. You may also opt to power directly via USB or use the VCC IN interface on the PCB with other DC-DC 5V converters.
+
+#### BTN Button Board
+
+Although the appearance of the ZeroBETH BTN button board is the same as that of PicoBETH, the circuit design is different, making them incompatible. ZeroBETH uses a pull-up design, while PicoBETH uses a pull-down design.
+
+> [!CAUTION]  
+> Please note that the PicoBETH button board **cannot** be used with ZeroBETH.
 ### Cost Difference
 
 | Item             | PicoBETH Cost | ZeroBETH Cost         | Notes                             |
 |------------------|---------------|------------------------|-----------------------------------|
 | Main Controller  | $7            | Around $20.00          | Based on Taiwan retail pricing    |
 | Storage          | None          | Around $5 (16GB microSD) | Minimal capacity is sufficient    |
+| CPU Cooling    | Not required  | Approx. $1.5          | Cooling heatsink required for Zero 2W |
+
+> [!CAUTION]  
+> When running for extended periods, the ZeroBETH CPU can easily overheat, potentially leading to frequency throttling and instability in the stepper motor operation. Therefore, it is essential to install a heatsink to maintain system stability.
 
 ---
 
