@@ -35,6 +35,18 @@ ZeroBETH 是基於 [PicoBETH](https://github.com/206cc/PicoBETH) 的延伸版本
 
 ## PicoBETH 與 ZeroBETH 硬體差異
 
+### Load Cell 傳感器
+
+ZeroBETH 預設使用 NJ5 YZC-133 50kg Load Cell。若您使用 20kg Load Cell，請在工程選單中切換至 20kg 設定。
+
+> [!CAUTION]
+> 請注意，20kg 的 Load Cell 最大張力不得超過 45lb，否則可能導致永久性損壞。
+
+### 滑台
+
+ZeroBETH 預設搭配 SGX 1610 滑台。透過新的步進馬達驅動程式，在搭配 1610 螺杆滑台可實現高達 70lb 以上張力。
+
+### PCB 版
 ZeroBETH 僅需更換 PicoBETH EP6 中的主機板與按鍵板，即可完成變更。
 
 ![img_pcb1](docs/img_pcb1.jpg)
@@ -43,12 +55,28 @@ ZeroBETH 僅需更換 PicoBETH EP6 中的主機板與按鍵板，即可完成變
 
 **PCB 製作 Gerber 檔案：**（待完測試完成後上傳）
 
+#### DC-DC 5V 電源轉換器
+由於 MP1584EN 市場上存在許多劣質品，這些劣質品在耗電量較高的 Raspberry Pi Zero 2W 上，因較高的 ripple（紋波）可能導致系統不穩定及數據飄移。因此，在 ZeroBETH PCB 版中，新增了 Pololu D24V22F5 高品質 DC-DC 電源板腳位。
+
+若您的 MP1584EN 供電不穩，建議更換 MP1584EN 供應商，或直接改用 Pololu D24V22F5 電源轉換器，以確保系統穩定性。您也可以選擇直接使用 USB 供電，或透過 PCB 上的 VCC IN 接口，搭配其他 DC-DC 5V 變壓器進行供電。
+
+#### BTN 按鍵板
+
+ZeroBETH 的 BTN 按鍵板外觀與 PicoBETH 相同，但電路設計不同，無法相互通用。ZeroBETH 的按鍵採用上拉設計，而 PicoBETH 則採用下拉設計。
+
+> [!CAUTION]
+> 請注意，PicoBETH 的按鍵板不可用於 ZeroBETH。
+
 ### 成本差異
 
 | 項目           | PicoBETH 成本 | ZeroBETH 成本       | 備註                     |
 |----------------|---------------|----------------------|--------------------------|
 | 主控板         | $7            | 約 $20.00            | 台灣零售市場價格         |
 | 儲存裝置       | 無            | 約 $5（16GB microSD） | 最小容量即可             |
+| CPU散熱       | 不需要          | 約 $1.5                | Zero 2W 務必安裝散熱片 |
+
+> [!CAUTION]
+> ZeroBETH 長時間運作時 CPU 容易過熱，可能導致降頻，影響步進馬達的穩定性。因此，務必安裝散熱片以確保系統穩定。
 
 ---
 
