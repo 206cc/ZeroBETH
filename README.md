@@ -12,6 +12,9 @@ ZeroBETH is an extended version based on [PicoBETH](https://github.com/206cc/Pic
 > [!TIP]
 > Currently in testing phase. Will be released once completed and verified.
 
+> [!CAUTION]  
+> **This is a Pre (Preview) Version:** This version is an ongoing development and testing release. If you encounter any bugs or have suggestions for improvement, please report them to the project's GitHub discussion area.  
+
 ---
 
 ### Preview Videos
@@ -44,13 +47,17 @@ ZeroBETH is an extended version based on [PicoBETH](https://github.com/206cc/Pic
 ZeroBETH is equipped with the NJ5 YZC-133 50kg Load Cell by default. If you are using a 20kg Load Cell, please switch to the 20kg setting from the engineering menu.
 
 > [!CAUTION]  
-> Please note that the maximum tension for the 20kg Load Cell should not exceed 45lb, as this may cause permanent damage.
+> Please note that the maximum tension for the 20kg Load Cell should not exceed 40lb, as this may cause permanent damage.
 
 ### Sliding Platform
 
 ZeroBETH is designed to work with the SGX 1610 sliding platform. With the new stepper motor driver program, it supports tension up to 70lb or more when used with the 1610 screw sliding platform.
 
-### PCB Version  
+### Heatsink
+
+Since the Wi-Fi module of the Pico 2W is integrated within the CPU, tests have shown that when the CPU temperature exceeds 60°C, the Wi-Fi may become unstable. To improve cooling efficiency, it is recommended to install a heatsink. When the temperature exceeds 60°C, the system will automatically disable the Wi-Fi function. To reactivate it, please go to the menu and manually restart the Wi-Fi.
+
+### Main PCB and Button PCB  
 To upgrade to ZeroBETH, simply replace the main board and button board from PicoBETH EP6.
 
 ![img_pcb1](docs/img_pcb1.jpg)  
@@ -72,11 +79,9 @@ Although the appearance of the ZeroBETH BTN button board is the same as that of 
 > [!CAUTION]  
 > Please note that the PicoBETH button board **cannot** be used with ZeroBETH.
 
-#### Heatsink
+---
 
-Since the Wi-Fi module of the Pico 2W is integrated within the CPU, tests have shown that when the CPU temperature exceeds 60°C, the Wi-Fi may become unstable. To improve cooling efficiency, it is recommended to install a heatsink. When the temperature exceeds 60°C, the system will automatically disable the Wi-Fi function. To reactivate it, please go to the menu and manually restart the Wi-Fi.
-
-### Cost Difference
+## Cost Difference
 
 | Item             | PicoBETH Cost | ZeroBETH Cost         | Notes                             |
 |------------------|---------------|------------------------|-----------------------------------|
@@ -121,18 +126,22 @@ PicoBETH has been tested over a long period and validated by users. It offers st
 
 ## Installation Guide
 
-1. Build the machine body following the [PicoBETH project instructions](https://github.com/206cc/PicoBETH).
-2. Replace the mainboard and keypad board in EP6 with ZeroBETH-specific parts.
-3. Write the ZeroBETH firmware to a microSD card, insert it into the Zero 2 W, and install it on the machine to start using.
+1. **Assembling the Machine Body**  
+   - Follow the instructions from the [PicoBETH](https://github.com/206cc/PicoBETH) project to assemble the machine body.  
+   - During the assembly process, replace **EP6** from PicoBETH with the [**ZeroBETH dedicated mainboard and button panel**](#main-pcb-and-button-pcb).  
+
+2. **Firmware Burning**  
+   - Burn the **ZeroBETH firmware** to the microSD card.  
+   - Insert the **Raspberry Pi Zero 2 W** and install it into the machine for normal operation.  
+   - For detailed burning steps, please refer to: [Build and Install](docs/build_and_install.md)  
 
 ---
 
-## Additional Documentation (In Progress)
+## Additional Documentation (Planned)
 
-> The following documents are currently being organized and drafted. Content will be added once ready.
+> The following documents are still being organized and written. Detailed content will be added upon completion.
 
-- Operation & Settings Guide
-- Software Build & Installation Guide
+- Operation and Configuration Guide  
 
 ---
 
