@@ -71,16 +71,18 @@ Although the appearance of the ZeroBETH BTN button board is the same as that of 
 
 > [!CAUTION]  
 > Please note that the PicoBETH button board **cannot** be used with ZeroBETH.
+
+#### Heatsink
+
+Since the Wi-Fi module of the Pico 2W is integrated within the CPU, tests have shown that when the CPU temperature exceeds 60°C, the Wi-Fi may become unstable. To improve cooling efficiency, it is recommended to install a heatsink. When the temperature exceeds 60°C, the system will automatically disable the Wi-Fi function. To reactivate it, please go to the menu and manually restart the Wi-Fi.
+
 ### Cost Difference
 
 | Item             | PicoBETH Cost | ZeroBETH Cost         | Notes                             |
 |------------------|---------------|------------------------|-----------------------------------|
 | Main Controller  | $7            | Around $20.00          | Based on Taiwan retail pricing    |
 | Storage          | None          | Around $5 (16GB microSD) | Minimal capacity is sufficient    |
-| CPU Cooling    | Not required  | Approx. $1.5          | Cooling heatsink required for Zero 2W |
-
-> [!CAUTION]  
-> When running for extended periods, the ZeroBETH CPU can easily overheat, potentially leading to frequency throttling and instability in the stepper motor operation. Therefore, it is essential to install a heatsink to maintain system stability.
+| CPU Cooling    | Not required  | Approx. $1.5          | Recommended, not mandatory |
 
 ---
 
