@@ -128,7 +128,7 @@ PicoBETH has been tested over a long period and validated by users. It offers st
 
 1. **Assembling the Machine Body**  
    - Follow the instructions from the [PicoBETH](https://github.com/206cc/PicoBETH) project to assemble the machine body.  
-   - During the assembly process, replace **EP6** from PicoBETH with the [**ZeroBETH Main PCB and Button PCB **](#main-pcb-and-button-pcb).  
+   - During the assembly process, replace **EP6** from PicoBETH with the [**ZeroBETH Main PCB and Button PCB**](#main-pcb-and-button-pcb).  
 
 2. **Firmware Burning**  
    - Burn the **ZeroBETH firmware** to the microSD card.  
