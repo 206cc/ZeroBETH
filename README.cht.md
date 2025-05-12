@@ -8,6 +8,9 @@ ZeroBETH 是基於 [PicoBETH](https://github.com/206cc/PicoBETH) 的延伸版本
 > [!TIP]
 > 目前仍在測試階段，待完善後將公開釋出
 
+> [!CAUTION]  
+> **此為 Pre (預覽)版本**：此版本為開發中的測試版本，若遇到 Bug 或需要改進建議，請回報至專案的 GitHub 討論區。 
+
 ---
 
 ### 預覽影片
@@ -40,13 +43,17 @@ ZeroBETH 是基於 [PicoBETH](https://github.com/206cc/PicoBETH) 的延伸版本
 ZeroBETH 預設使用 NJ5 YZC-133 50kg Load Cell。若您使用 20kg Load Cell，請在工程選單中切換至 20kg 設定。
 
 > [!CAUTION]
-> 請注意，20kg 的 Load Cell 最大張力不得超過 45lb，否則可能導致永久性損壞。
+> 請注意，20kg 的 Load Cell 最大張力不得超過 40lb，否則可能導致永久性損壞。
 
 ### 滑台
 
 ZeroBETH 預設搭配 SGX 1610 滑台。透過新的步進馬達驅動程式，在搭配 1610 螺杆滑台可實現高達 70lb 以上張力。
 
-### PCB 版
+### 散熱片
+
+由於 Pico 2W 的 Wi-Fi 模組封裝在 CPU 中，經測試發現，當 CPU 溫度超過 60 度時，Wi-Fi 可能會失效。建議加裝散熱片以提升散熱效能。當溫度超過 60 度時，系統將自動關閉 Wi-Fi 功能。如需重新啟用，可進入選單手動重啟 Wi-Fi。
+
+### PCB 主板與按鍵板
 ZeroBETH 僅需更換 PicoBETH EP6 中的主機板與按鍵板，即可完成變更。
 
 ![img_pcb1](docs/img_pcb1.jpg)
@@ -67,11 +74,9 @@ ZeroBETH 的 BTN 按鍵板外觀與 PicoBETH 相同，但電路設計不同，�
 > [!CAUTION]
 > 請注意，PicoBETH 的按鍵板不可用於 ZeroBETH。
 
-#### 散熱片
+---
 
-由於 Pico 2W 的 Wi-Fi 模組封裝在 CPU 中，經測試發現，當 CPU 溫度超過 60 度時，Wi-Fi 可能會失效。建議加裝散熱片以提升散熱效能。當溫度超過 60 度時，系統將自動關閉 Wi-Fi 功能。如需重新啟用，可進入選單手動重啟 Wi-Fi。
-
-### 成本差異
+## 成本差異
 
 | 項目           | PicoBETH 成本 | ZeroBETH 成本       | 備註                     |
 |----------------|---------------|----------------------|--------------------------|
@@ -116,18 +121,22 @@ PicoBETH 已經過長期測試與使用者驗證，擁有穩定的效能與高�
 
 ## 安裝指南
 
-1. 請依照 [PicoBETH](https://github.com/206cc/PicoBETH) 專案說明製作機器本體。
-2. 將 PicoBETH 中的 EP6 更換為 ZeroBETH 專用主板與按鍵板。
-3. 將 ZeroBETH 韌體寫入 microSD 卡，插入 Zero 2 W 後按裝至機器上即可使用。
+1. **組裝機器本體**  
+   - 請依照 [PicoBETH](https://github.com/206cc/PicoBETH) 專案說明，製作機器本體。  
+   - 在組裝過程中，將 PicoBETH 中的 **EP6** 更換為 [**ZeroBETH 專用主板與按鍵板**](#專用主板與按鍵板)。  
+
+2. **燒錄韌體**  
+   - 將 **ZeroBETH 韌體**燒錄至 microSD 卡。  
+   - 插入 **Raspberry Pi Zero 2 W**，將其安裝至機器上，即可正常使用。  
+   - 詳細燒錄步驟請參考：[軟體建置與安裝](docs/build_and_install.cht.md)  
 
 ---
 
-## 其他說明文件（ 規劃中）
+## 其他說明文件（規劃中）
 
 > 以下文件仍在整理與撰寫中，完成後將補上詳細內容。
 
-- 操作與設定指南
-- 軟體建置與安裝
+- 操作與設定指南  
 
 ---
 
