@@ -30,7 +30,7 @@ In the preview (pre) version, a pre-built IMG file is provided. Please follow th
    - **Raspberry Pi Device:** No selection needed  
    - **Operating System:** Choose **Use custom** and select the extracted IMG file  
    - **Storage:** Select the MicroSD card to be burned  
-3. Click **Write** and wait for the process to complete.  
+3. Click **NO CLEAR SETTINGS** and wait for the process to complete.  
 
 ---
 
@@ -52,14 +52,13 @@ In the preview (pre) version, a pre-built IMG file is provided. Please follow th
 ## Completing the Burning Process
 
 1. Insert the burned SD card into the Raspberry Pi Zero 2W.  
-2. **Do not connect the ZeroBETH mainboard yet**, directly connect the MicroUSB power cable to boot.  
-3. Wait for the system to initialize until the green power indicator goes off.  
-4. Attach the Raspberry Pi Zero 2W to the ZeroBETH mainboard, ensure all hardware connections are secure, and complete the installation. Then, power on the system. Wait for about 30 seconds for the system to enter the hardware detection mode.  
-5. Follow the on-screen instructions to complete the hardware checks.  
+2. Install the Raspberry Pi Zero 2W onto the ZeroBETH mainboard, ensuring all hardware connections are secure and properly fixed.  
+3. Power on the system. On first boot, wait about 1 minute — the system will automatically enter the hardware detection mode.  
+4. Follow the on-screen instructions to complete the hardware checks.  
 
 ---
 
-## Parameter Settings
+## Initial Setup
 
 1. After entering the system, press the **DOWN key 5 times** on the version information page to enter the engineering menu.  
 2. Configure the following parameters:  
