@@ -67,9 +67,26 @@ To upgrade to ZeroBETH, simply replace the main board and button board from Pico
 
 #### DC-DC 5V Power Converter
 
-Due to the prevalence of substandard MP1584EN modules on the market, these inferior products may cause instability and data drift when used with the more power-hungry Raspberry Pi Zero 2W, due to high ripple. Therefore, the ZeroBETH PCB version includes a high-quality Pololu D24V22F5 DC-DC power board.
+Due to the inconsistent quality of **MP1584EN** modules on the market, many low-quality units may produce excessive **ripple**, which can cause **drift in the HX711 tension sensor**, especially on the more power-demanding **Raspberry Pi Zero 2W**.
 
-If your MP1584EN power supply is unstable, it is recommended to switch to a reliable MP1584EN supplier or directly use the Pololu D24V22F5 power converter to ensure system stability. You may also opt to power directly via USB or use the VCC IN interface on the PCB with other DC-DC 5V converters.
+To address this, the **ZeroBETH PCB version** includes dedicated pin headers designed to support the **Pololu D24V22F5 high-quality DC-DC power module**.
+
+If you notice **frequent tension drift exceeding 5g during standby** when using an MP1584EN module, you may consider:
+
+- Trying MP1584EN modules from other suppliers, or  
+- Switching directly to the **Pololu D24V22F5 power converter** to improve stability.
+
+Alternatively, you can also choose to:
+
+- **Power the system directly via USB**, or  
+- **Use the VCC IN header on the PCB** with another 5V DC-DC module.
+
+> [!NOTE]  
+> Tension drift is not only related to the power supply—it may also be caused by factors such as the HX711 amplifier module, the Load Cell sensor, or connection point impedance. It is recommended to use high-quality components to ensure stable performance.
+
+![img_pcb3](docs/img_pololu.jpg)  
+Similar to the SparkFun HX711 module, a **genuine Pololu D24V22F5 DC-DC module** will come with original packaging and a labeled sticker. The typical price is around $10. If the price is unusually low, please be cautious of possible counterfeits.
+
 
 #### BTN Button Board
 
