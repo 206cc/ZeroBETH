@@ -58,13 +58,31 @@ ZeroBETH 僅需更換 PicoBETH EP6 中的主機板與按鍵板，即可完成變
 
 ![img_pcb1](docs/img_pcb1.jpg)
 ![img_pcb2](docs/img_pcb2.jpg)
+![img_pcb3](docs/img_pcb3.jpg)
 
 **PCB 製作 Gerber 檔案：**（待完測試完成後上傳）
 
 #### DC-DC 5V 電源轉換器
-由於 MP1584EN 市場上存在許多劣質品，這些劣質品在耗電量較高的 Raspberry Pi Zero 2W 上，因較高的 ripple（紋波）可能導致系統不穩定及數據飄移。因此，在 ZeroBETH PCB 版中，新增了 Pololu D24V22F5 高品質 DC-DC 電源板腳位。
 
-若您的 MP1584EN 供電不穩，建議更換 MP1584EN 供應商，或直接改用 Pololu D24V22F5 電源轉換器，以確保系統穩定性。您也可以選擇直接使用 USB 供電，或透過 PCB 上的 VCC IN 接口，搭配其他 DC-DC 5V 變壓器進行供電。
+由於市面上的 **MP1584EN** 模組品質參差不齊，不少劣質品在耗電較高的 **Raspberry Pi Zero 2W** 上，會因產生較大的 **紋波（ripple）** 而導致系統不穩定，甚至造成 **HX711 張力感測器出現飄移現象**。
+
+因此，在 **ZeroBETH PCB 版本中**，特別設計了支援 **Pololu D24V22F5 高品質 DC-DC 電源模組** 的專用腳位。
+
+若您發現使用 MP1584EN 時，**在待機狀態下經常出現超過 5g 的張力飄移**，可考慮：
+
+- 嘗試更換其他供應商的 MP1584EN 模組，或  
+- 直接改用 **Pololu D24V22F5 電源轉換器**，以提升穩定性。
+
+此外，您也可以選擇：
+
+- **直接使用 USB 供電**，或  
+- **透過 PCB 上的 VCC IN 接口**，搭配其他 5V DC-DC 模組進行供電。
+
+> [!NOTE]  
+> 張力飄移現象不僅與供電有關，也可能與 HX711 放大器模組、Load Cell 感測器或接點阻抗等因素相關，建議選用品質優良的零件以確保穩定性。
+
+![img_pcb3](docs/img_pololu.jpg)  
+與 SparkFun 的 HX711 模組類似，**正品的 Pololu D24V22F5 DC-DC 模組** 會附有原廠包裝袋與標籤貼紙，售價約為 10 美元。若遇到價格過低的產品，請留意是否為仿冒品。
 
 #### BTN 按鍵板
 
