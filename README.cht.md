@@ -60,7 +60,7 @@ ZeroBETH 僅需更換 PicoBETH EP6 中的主機板與按鍵板，即可完成變
 ![img_pcb2](docs/img_pcb2.jpg)
 ![img_pcb3](docs/img_pcb3.jpg)
 
-**PCB 製作 Gerber 檔案：**（待完測試完成後上傳）
+**PCB 製作 Gerber 檔案：** [下載](docs/Gerber_ZeroBETH_1.2_2025-05-15.zip)  
 
 #### DC-DC 5V 電源轉換器
 
