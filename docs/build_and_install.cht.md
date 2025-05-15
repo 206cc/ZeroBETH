@@ -17,8 +17,8 @@
 
 ### 1. 下載 IMG
 
-- 前往 [SourceForge](https://sourceforge.net/) 下載 ZeroBETH 的 img 檔案。(尚未上傳)
-- 解壓縮後獲得 `zerobeth-0.9.x-pre-raspbian-lite-32bit-bookworm.img` 檔。  
+- 前往 [SourceForge](https://sourceforge.net/projects/zerobeth/files/) 下載 ZeroBETH 的 img 壓縮檔案。
+- 解壓縮後獲得 `ZeroBETH_v0.9.xx-Pre_RPiZero2W_32bit_xxxxxxxx.img` 檔。  
 
 ---
 
