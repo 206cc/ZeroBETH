@@ -63,7 +63,7 @@ To upgrade to ZeroBETH, simply replace the main board and button board from Pico
 ![img_pcb1](docs/img_pcb1.jpg)  
 ![img_pcb2](docs/img_pcb2.jpg)  
 
-**PCB Gerber files:** (To be uploaded after testing is complete)
+**PCB Gerber files:** [DOWNLOAD](docs/Gerber_ZeroBETH_1.2_2025-05-15.zip)  
 
 #### DC-DC 5V Power Converter
 
