@@ -9,10 +9,7 @@
 
 ZeroBETH is an extended version based on [PicoBETH](https://github.com/206cc/PicoBETH), upgrading the main controller from Raspberry Pi Pico to Raspberry Pi Zero 2 W, offering higher performance and more expansion capabilities. This variant retains the original design philosophy: economical, intuitive, and precise, while providing greater flexibility for advanced users and developers.
 
-> [!TIP]
-> Currently in testing phase. Will be released once completed and verified.
-
-> [!CAUTION]  
+> [!TIP]  
 > **This is a Pre (Preview) Version:** This version is an ongoing development and testing release. If you encounter any bugs or have suggestions for improvement, please report them to the project's GitHub discussion area.  
 
 ---
