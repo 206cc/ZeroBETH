@@ -18,8 +18,8 @@ In the preview (pre) version, a pre-built IMG file is provided. Please follow th
 
 ### 1. Download the IMG
 
-- Visit [SourceForge](https://sourceforge.net/) to download the ZeroBETH IMG file. (Not yet uploaded)
-- After extraction, you will get the file `zerobeth-0.9.x-pre-raspbian-lite-32bit-bookworm.img`.  
+- Visit [SourceForge](https://sourceforge.net/projects/zerobeth/files/) to download the compressed ZeroBETH IMG file.
+- After extraction, you will get the file `ZeroBETH_v0.9.xx-Pre_RPiZero2W_32bit_xxxxxxxx .zip`.  
 
 ---
 
