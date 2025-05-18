@@ -151,6 +151,30 @@ PicoBETH has been tested over a long period and validated by users. It offers st
 
 ---
 
+## Notes
+
+### 1. HW3D Version Assembly Adjustment
+
+When using the 3D printed version, the 5-way button socket on the ZeroBETH PCB mainboard interferes with Part 7, causing the top cover to not fit properly.  
+Please mark the position as shown in the photos below, and modify a groove of about 10mm before installation.
+
+![img_part7](docs/img_part7_1.jpg)  
+![img_part7](docs/img_part7_2.jpg)
+
+The updated version of Part 7 has been uploaded to Thingiverse:  
+🔗 [Thingiverse](https://www.thingiverse.com/thing:6913170/)
+
+### 2. Clamp Head Return Control Difference
+
+In the preview version of ZeroBETH, only the "Cancel" button is used to control the return of the clamp head.  
+In contrast, PicoBETH provides two control methods:  
+- A button on the clamp head itself  
+- The "Exit" button on the panel  
+
+After the string pulling action is completed, pressing the "Exit" button will return the clamp head to its initial position.
+
+---
+
 ## Additional Documentation (Planned)
 
 > The following documents are still being organized and written. Detailed content will be added upon completion.
