@@ -173,6 +173,14 @@ In contrast, PicoBETH provides two control methods:
 
 After the string pulling action is completed, pressing the "Exit" button will return the clamp head to its initial position.
 
+### 3. System Shutdown Procedure
+
+PicoBETH uses an MCU (microcontroller) as the main controller, so it is safe to power it off directly.  
+However, ZeroBETH runs a full Linux operating system, and it is strongly recommended to shut it down properly using the **"4-1 Shutdown"** option in the menu to avoid system corruption.
+
+Once the shutdown process is complete, the green LED on the Raspberry Pi Zero 2W board will turn off (the 2004 LCD will remain on — this is normal).  
+In general, it is safe to disconnect power about 10 seconds after pressing the shutdown button.
+
 ---
 
 ## Additional Documentation (Planned)
