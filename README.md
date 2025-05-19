@@ -187,7 +187,8 @@ In general, it is safe to disconnect power about 10 seconds after pressing the s
 
 > The following documents are still being organized and written. Detailed content will be added upon completion.
 
-- Operation and Configuration Guide  
+- Operation and Configuration Guide
+- [Developer Guide](docs/developer_guide.md)
 
 ---
 
