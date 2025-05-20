@@ -166,7 +166,7 @@ The updated version of Part 7 has been uploaded to Thingiverse:
 
 ### 2. Clamp Head Return Control Difference
 
-In the preview version of ZeroBETH, only the "Cancel" button is used to control the return of the clamp head.  
+In the preview version of ZeroBETH, only the "Exit" button is used to control the return of the clamp head.  
 In contrast, PicoBETH provides two control methods:  
 - A button on the clamp head itself  
 - The "Exit" button on the panel  
