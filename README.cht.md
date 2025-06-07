@@ -15,8 +15,10 @@ ZeroBETH 是基於 [PicoBETH](https://github.com/206cc/PicoBETH) 的延伸版本
 | 類別 | 說明 | 連結 |
 |------|------|------|
 | Stringing Demo | ZeroBETH 實際穿線操作展示 | [觀看影片](https://youtu.be/M76PxqrGcno) |
-| Comparison Demo | ZeroBETH 與 PicoBETH 效能比較（開機速度、恆拉反應等） | [觀看影片](https://youtu.be/osMxNlAMeeI) |
 | New UI Design | 全新 UI 操作介面（LCD 菜單重設與提升刷新率） | [觀看影片](https://youtu.be/-ikYBSZI7xk) |
+
+> [!NOTE] 
+> PicoBETH 自 v2.90B 版本起整合了 ZeroBETH 的移植經驗，全面優化恆拉演算法與張緊啟動反應速度，整體性能已提升至與 ZeroBETH v1 相同的水準。
 
 ---
 
@@ -127,9 +129,12 @@ PicoBETH 已經過長期測試與使用者驗證，擁有穩定的效能與高�
 |------------------|--------------------|--------------------|------------------------------------------------|
 | 張力精度         | ±0.05 lb           | ±0.05 lb           | 張力平衡後的最大跳動範圍                       |
 | 張力取樣頻率     | ≥80Hz              | ≥80Hz              | 取決於 SparkFun HX711 模組                    |
-| 恆拉頻率         | 較低            | 較高            | 更快處理速度可提升張力恆拉反應                 |
+| 恆拉頻率         | v2.90B以後相同      | 相同            | v2.90B 版本後提升至 ZeroBETH 水準                 |
 | OTA 線上更新     | v2.80E以後韌體支援  | 支援               | 透過 Wi-Fi 更新韌體                            |
 | UI 介面          | 極簡介面           | 全新設計           | v1: 2004 LCD，v2: 4" 全彩 IPS LCD              |
+
+> [!NOTE] 
+> PicoBETH 自 v2.90B 版本起整合了 ZeroBETH 的移植經驗，全面優化恆拉演算法與張緊啟動反應速度，整體性能已提升至與 ZeroBETH v1 相同的水準。
 
 ---
 
